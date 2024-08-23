@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    Padding:0;
+    font-family:sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1, 0, 36, 0.75),rgba(1, 0, 37, 0.75)),url(garden.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 80%;
+    right: 100%;
+    margin:auto ;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 30px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: rgba(0, 105, 88, 0.842);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+   transition: 0.4s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.cont{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.cont h1{
+    font-size: 100px;
+    margin-top: 120px;
+}
+.cont h2{
+    font-size: 100px;
+    margin-top: 120px;
+    line-height: 25px;
+}
+.cont p{
+    line-height: 50px;
+    font-size: medium;
+}
+button{
+    width: 200px;
+    padding: 20PX 0;
+    text-align: center;
+    margin: 30PX 20PX;
+    font-weight: bolder;
+    border-radius: 25px;
+    background: transparent;
+    border: bold;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #007b8b;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.4s
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
